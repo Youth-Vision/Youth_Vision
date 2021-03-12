@@ -9,6 +9,7 @@ body {
     margin-top: 100px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: rgba(0,0,0,.05);
 }
 
 .header {
@@ -120,8 +121,39 @@ body {
     z-index: 10000000000000;
 }
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 25px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 25px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+/*-----------------------------------------------------------------------------*/
+.imgCharla {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    float: right;
+    border-radius: 10%;
+    margin: 1%;
+}
+
+.imgCharla2 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    float: left;
+    border-radius: 10%;
+    margin: 1%;
+}
+
+.contentTitle {
+    font-size: 34px;
+    text-align: center;
+}
+
+.content {
+    font-size: 25px;
 }
 /*-----------------------------------------------------------------------------*/
 footer {
@@ -130,10 +162,12 @@ footer {
     text-align: center;
     background-color: rgba(0,0,0,.1);
 }
+
 .a-facebook:link , .a-instagram:link, .a-tiktok:link, .a-facebook:visited, .a-instagram:visited, .a-tiktok:visited {
     color: #000;
     background-color: rgba(0, 0, 0,);
 }
+
 .a-facebook, .a-instagram, .a-tiktok {
     display: inline-block;
     margin-top: 5px;
