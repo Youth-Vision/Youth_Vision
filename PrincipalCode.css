@@ -123,11 +123,13 @@ body {
         font-size: 18px;
     }
 }
-/*---------------*/
+/*---------------------------------------------------------------------------*/
 .contentTitle {
     position: unset;
     margin: auto;
     height: 10%; width: 95%;
+    font-size: 45px;
+    text-align: center;
     background-color: rgb(222, 222, 222);
     border-bottom-left-radius: 55%; border-bottom-right-radius: 55%;
 }
@@ -148,12 +150,6 @@ body {
     float: left;
     border-radius: 10%;
     margin: 1%;
-}
-
-.contentTitle {
-    padding-top: 2.5%;
-    font-size: 45px;
-    text-align: center;
 }
 
 .content {
