@@ -6,10 +6,10 @@
 body {
     font-family: 'Comfortaa', cursive;
     transition: background-color .5s;
-    margin-top: 100px;
+    margin-top: 100px; margin-left: 5px;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: rgba(0,0,0,.05);
+    background-color: #eeeeee;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
     background-color: rgb(169, 169, 169) !important;
     padding: 20px 10px;
     width: 100%;
-    margin-top: -100px;
+    margin-top: -100px; margin-left: -5px;
     position: fixed;
     transition: .6s;
 }
@@ -65,10 +65,6 @@ body {
         float: none;
     }
 }
-
-.div-content {
-    padding: 20px;
-}
 /*------------------------------------*/
 .sidenav {
     height: 100%;
@@ -109,7 +105,7 @@ body {
     float: left;
 }
 .closeSideBar {
-    background-color: rgba(40, 40, 40, 0.8);
+    background-color: rgba(40, 40, 40, 0.8) !important;
 
 }
 #main {
@@ -118,7 +114,6 @@ body {
 }
 .openSideBar {
     margin-top: 15px;
-    z-index: 10000000000000;
 }
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -127,6 +122,14 @@ body {
     .sidenav a {
         font-size: 18px;
     }
+}
+/*---------------*/
+.contentTitle {
+    position: unset;
+    margin: auto;
+    height: 10%; width: 95%;
+    background-color: rgb(222, 222, 222);
+    border-bottom-left-radius: 55%; border-bottom-right-radius: 55%; border-top-left-radius: 10%; border-top-right-radius: 10%;
 }
 /*-----------------------------------------------------------------------------*/
 .imgCharla {
@@ -148,7 +151,8 @@ body {
 }
 
 .contentTitle {
-    font-size: 34px;
+    padding-top: 2.5%;
+    font-size: 45px;
     text-align: center;
 }
 
