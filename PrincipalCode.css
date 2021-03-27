@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Comfortaa', cursive;
-    transition: background-color .5s;
+    transition: .5s;
     margin-top: 100px; margin-left: 5px;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -109,8 +109,8 @@ body {
 
 }
 #main {
-    transition: margin-left .5s;
-    padding: 16px;
+    transition: .5s;
+    padding: 10px;
 }
 .openSideBar {
     margin-top: 15px;
@@ -129,7 +129,7 @@ body {
     margin: auto;
     height: 10%; width: 95%;
     background-color: rgb(222, 222, 222);
-    border-bottom-left-radius: 55%; border-bottom-right-radius: 55%; border-top-left-radius: 10%; border-top-right-radius: 10%;
+    border-bottom-left-radius: 55%; border-bottom-right-radius: 55%;
 }
 /*-----------------------------------------------------------------------------*/
 .imgCharla {
