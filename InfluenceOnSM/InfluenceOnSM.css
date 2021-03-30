@@ -5,10 +5,11 @@
 
 body {
     font-family: 'Comfortaa', cursive;
-    transition: background-color .5s;
+    transition: .5s;
     margin-top: 100px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: #eeeeee;
 }
 
 .header {
