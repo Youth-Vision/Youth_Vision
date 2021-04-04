@@ -6,7 +6,7 @@
 body {
     font-family: 'Comfortaa', cursive;
     transition: .5s;
-    margin-top: 100px;
+    margin-top: 100px; margin-left: 5px;
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: #eeeeee;
@@ -17,7 +17,7 @@ body {
     background-color: rgb(169, 169, 169) !important;
     padding: 20px 10px;
     width: 100%;
-    margin-top: -100px;
+    margin-top: -100px; margin-left: -5px;
     position: fixed;
     transition: .6s;
 }
@@ -65,16 +65,12 @@ body {
         float: none;
     }
 }
-
-.div-content {
-    padding: 20px;
-}
 /*------------------------------------*/
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     right: -1px;
     background-color: #111;
@@ -109,20 +105,70 @@ body {
     float: left;
 }
 .closeSideBar {
-    background-color: rgba(40, 40, 40, 0.8);
+    background-color: rgba(40, 40, 40, 0.8) !important;
 
 }
 #main {
-    transition: margin-left .5s;
-    padding: 16px;
+    transition: .5s;
+    padding: 10px;
 }
 .openSideBar {
     margin-top: 15px;
-    z-index: 10000000000000;
 }
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 25px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 25px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*---------------------------------------------------------------------------*/
+.contentTitle {
+    margin: auto;
+    height: 10%; width: 95%;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(208, 208, 208);
+    border-bottom-left-radius: 55%; border-bottom-right-radius: 55%;
+}
+.h4-Sub_Title {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    height: 5%; width: 65%;
+    font-size: 20px;
+    background-color: rgba(181, 181, 181, 0.515);
+    border-top-left-radius: 45%; border-top-right-radius: 45%;
+}
+.p1 {
+    text-align: center;
+    margin: auto;
+    height: fit-content; width: fit-content;
+    font-size: 25px;
+    background-color: #a5a5a5;
+    border-bottom-left-radius: 25%; border-bottom-right-radius: 25%;
+}
+.p2 {
+    text-align: center;
+    font-size: x-large;
+}
+.InfluencerImg {
+    width: 290px; height: 300px;
+    margin: 10px 5%;
+}
+.InfluencerImg2 {
+    width: 270px; height: 370px;
+    margin: 10px 8%;
+}
+.p3 {
+    text-align: center;
+    font-size: x-large;
+}
+.face_to_faceMeeting {
+    width: 300px; height: 270px;
+    margin: auto;
 }
 /*-----------------------------------------------------------------------------*/
 footer {
@@ -130,11 +176,14 @@ footer {
     height: 15%;
     text-align: center;
     background-color: rgba(0,0,0,.1);
+    margin-top: 10px; margin-left: -5px;
 }
+
 .a-facebook:link , .a-instagram:link, .a-tiktok:link, .a-facebook:visited, .a-instagram:visited, .a-tiktok:visited {
     color: #000;
     background-color: rgba(0, 0, 0,);
 }
+
 .a-facebook, .a-instagram, .a-tiktok {
     display: inline-block;
     margin-top: 5px;
