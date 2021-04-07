@@ -6,7 +6,7 @@
 body {
     font-family: 'Comfortaa', cursive;
     transition: .5s;
-    margin-top: 100px;
+    margin-top: 100px; margin-left: 5px;
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: #eeeeee;
@@ -14,10 +14,10 @@ body {
 
 .header {
     overflow: hidden;
-    background-color: rgb(169, 169, 169) !important;
+    background-color: rgb(151, 151, 151) !important;
     padding: 20px 10px;
     width: 100%;
-    margin-top: -100px;
+    margin-top: -100px; margin-left: -5px;
     position: fixed;
     transition: .6s;
 }
@@ -65,16 +65,12 @@ body {
         float: none;
     }
 }
-
-.div-content {
-    padding: 20px;
-}
 /*------------------------------------*/
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     right: -1px;
     background-color: #111;
@@ -109,20 +105,65 @@ body {
     float: left;
 }
 .closeSideBar {
-    background-color: rgba(40, 40, 40, 0.8);
+    background-color: rgba(40, 40, 40, 0.8) !important;
 
 }
 #main {
-    transition: margin-left .5s;
-    padding: 16px;
+    transition: .5s;
+    padding: 10px;
 }
 .openSideBar {
     margin-top: 15px;
-    z-index: 10000000000000;
 }
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 25px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 25px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*---------------------------------------------------------------------------*/
+.contentTitle {
+    position: unset;
+    margin: auto;
+    height: 10%; width: 95%;
+    font-size: 45px;
+    text-align: center;
+    background-color: rgb(174, 174, 174);
+    border-bottom-left-radius: 35%; border-bottom-right-radius: 30%;
+}
+.content-p1, .content-p2, .content-p3, .content-p4 {
+    text-align: center;
+    font-size: 17px;
+    width: 100%;
+    max-width: 1500px;
+}
+.Verse1 {
+    width: 100%; height: 100%;
+    max-width: 250px; max-height: 250px;
+}
+.Verse2 {
+    width: 90%;
+    height: fit-content;
+    text-align: center;
+    margin: 20px auto;
+    background-color: rgb(90, 89, 89);
+    color: #fff;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    font-family: inherit;
+}
+.Verse2-1 {
+    width: fit-content;
+    margin: 10px auto; margin-top: -20px;
+    background-color: rgb(204, 204, 204);
+}
+.Jesus {
+    color: white;
+    background-color: rgb(61, 61, 61);
+    border-radius: 20%;
 }
 /*-----------------------------------------------------------------------------*/
 footer {
@@ -131,10 +172,12 @@ footer {
     text-align: center;
     background-color: rgba(0,0,0,.1);
 }
+
 .a-facebook:link , .a-instagram:link, .a-tiktok:link, .a-facebook:visited, .a-instagram:visited, .a-tiktok:visited {
     color: #000;
     background-color: rgba(0, 0, 0,);
 }
+
 .a-facebook, .a-instagram, .a-tiktok {
     display: inline-block;
     margin-top: 5px;
