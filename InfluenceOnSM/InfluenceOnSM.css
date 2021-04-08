@@ -90,6 +90,9 @@ body {
     transition: 0.6s;
     float: left;
 }
+.sub-pages {
+    margin-bottom: 15px;
+}
 
 .sidenav .sub-pages:hover {
     color: #f1f1f1;
